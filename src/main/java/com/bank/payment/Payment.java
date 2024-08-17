@@ -12,6 +12,7 @@ import java.util.Date;
  * In this interface, we have multiple pay methods with different parameters.
  */
 public interface Payment {
+    public static final int MAX_PAYMENT_LIMIT = 10000;
     public abstract void pay(double amount);
 
     /**

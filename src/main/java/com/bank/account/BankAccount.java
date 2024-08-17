@@ -6,7 +6,6 @@ public abstract class BankAccount {
     protected double balance;//protected access modifier
 
     /**
-     * Default access modifier(package-private) for the Constructor.
      * Constructor to initialize the BankAccount object.
      * This is an abstract class, so we can't create an object of this class.
      * Even though we can't create an object of this class, we can create a constructor.
@@ -47,3 +46,7 @@ public abstract class BankAccount {
         this.balance = balance;
     }
 }
+
+
+//todo: add this to question pack...
+//todo: need to do a proper example for this.

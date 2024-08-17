@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Counter {
-    private static final double MINIMUM_TAXABLE_AMOUNT = 10000;
+    private static final double MINIMUM_TAXABLE_AMOUNT = 1000;
     public static void main(String[] args) {
         final List<BankAccount> bankAccounts = createBankAccounts();
         final List<BankAccount> taxableAccounts = findTaxableAccounts(bankAccounts, MINIMUM_TAXABLE_AMOUNT);
@@ -18,19 +18,34 @@ public class Counter {
 
     public static List<BankAccount> createBankAccounts() {
         List<BankAccount> accounts = new ArrayList<>();
-        accounts.add(new SavingAccount("1", "Holder 1", 15000, 5));
-        accounts.add(new SavingAccount("2", "Holder 2", 25000, 5));
-        accounts.add(new SavingAccount("3", "Holder 3", 35000, 5));
-        accounts.add(new SavingAccount("4", "Holder 4", 45000, 5));
-        accounts.add(new FixedDepositAccount("5", "Holder 5", 500000, 6, 12, null));
-        accounts.add(new FixedDepositAccount("6", "Holder 6", 150000, 6, 12, null));
-        accounts.add(new FixedDepositAccount("7", "Holder 7", 250000, 6, 12, null));
-        accounts.add(new FixedDepositAccount("8", "Holder 8", 350000, 6, 12, null));
-        accounts.add(new SeniorCitizenAccount("9", "Holder 9", 25000, 15, 65));
-        accounts.add(new SeniorCitizenAccount("10", "Holder 10", 25000, 15, 62));
-        accounts.add(new SeniorCitizenAccount("11", "Holder 11", 25000, 15, 62));
-        accounts.add(new SeniorCitizenAccount("12", "Holder 12", 25000, 15, 75));
-        accounts.add(new SeniorCitizenAccount("13", "Holder 13", 25000, 15, 69));
+
+        //to create a list of saving accounts
+        BankAccount account1 = new SavingAccount("1", "Holder 1", 1000, 5);
+        BankAccount account2 = new SavingAccount("2", "Holder 2", 5000, 5);
+        BankAccount account3 = new SavingAccount("3", "Holder 3", 2000, 5);
+        BankAccount account4 = new SavingAccount("4", "Holder 4", 1500, 5);
+
+        //to create a list of fixed deposit accounts
+        BankAccount account5 = new FixedDepositAccount("5", "Holder 5", 500000, 6, 12, null);
+        BankAccount account6 = new FixedDepositAccount("6", "Holder 6", 100000, 6, 12, null);
+        BankAccount account7 = new FixedDepositAccount("7", "Holder 7", 600000, 6, 12, null);
+
+        //to create a list of senior citizen accounts
+        BankAccount account8 = new SeniorCitizenAccount("8", "Holder 8", 15000, 15, 65);
+        BankAccount account9 = new SeniorCitizenAccount("9", "Holder 9", 25000, 15, 65);
+        BankAccount account10 = new SeniorCitizenAccount("10", "Holder 10", 9000, 15, 65);
+
+        //add all the accounts to the list
+        accounts.add(account1);
+        accounts.add(account2);
+        accounts.add(account3);
+        accounts.add(account4);
+        accounts.add(account5);
+        accounts.add(account6);
+        accounts.add(account7);
+        accounts.add(account8);
+        accounts.add(account9);
+        accounts.add(account10);
         return accounts;
     }
 

@@ -12,21 +12,25 @@ public class GeneralSavingAccount extends SavingAccount implements Payment {
 
     @Override
     public void pay(double amount) {
-        //todo: implement payment logic
+        if(balance - amount > 0){
+            System.out.println("Payment successful...");
+        }else{
+            System.out.println("Payment Fail...");
+        }
     }
 
     @Override
     public void pay(double amount, String currency) {
-      //todo: implement payment logic
+        System.out.println("Processing payment of " + amount + " " + currency + ".");
     }
 
     @Override
     public void pay(double amount, String fromAccount, String toAccount) {
-        //todo: implement payment logic
+        System.out.println("Transferring " + amount + " from account " + fromAccount + " to account " + toAccount + ".");
     }
 
     @Override
     public void pay(double amount, String billInvoice, String creditCardNo, Date date) {
-        //todo: implement payment logic
+        System.out.println("Paying " + amount + " for invoice " + billInvoice + " using credit card " + creditCardNo + " on date " + date + ".");
     }
 }
