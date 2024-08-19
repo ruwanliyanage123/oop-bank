@@ -1,4 +1,5 @@
 # oop-bank
+This is not a standard class diagram.
 
 ![Untitled Diagram](https://github.com/user-attachments/assets/1dd50c02-e41d-4c07-9ae0-8544b21caec7)
 
