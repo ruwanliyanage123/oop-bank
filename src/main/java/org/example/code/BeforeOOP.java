@@ -10,16 +10,16 @@ public class BeforeOOP {
 
         //we can simply create 10 bank accounts using the class and objects as following code
 
-        BankAccount account1 = new BankAccount("1", "Amal", 1000, 5);
-        BankAccount account2 = new BankAccount("2", "Nimal", 2000, 4.5);
-        BankAccount account3 = new BankAccount("3", "Sunil", 1500, 4);
-        BankAccount account4 = new BankAccount("4", "Kamal", 2500, 5.5);
-        BankAccount account5 = new BankAccount("5", "Ruwan", 3000, 6);
-        BankAccount account6 = new BankAccount("6", "Saman", 1800, 4.8);
-        BankAccount account7 = new BankAccount("7", "Bandara", 2200, 5.2);
-        BankAccount account8 = new BankAccount("8", "Chandana", 2700, 5.7);
-        BankAccount account9 = new BankAccount("9", "Gayan", 3200, 6.1);
-        BankAccount account10 = new BankAccount("10", "Lahiru", 3500, 6.3);
+        PersonalBankAccount account1 = new PersonalBankAccount("1", "Amal", 1000, 5);
+        PersonalBankAccount account2 = new PersonalBankAccount("2", "Nimal", 2000, 4.5);
+        PersonalBankAccount account3 = new PersonalBankAccount("3", "Sunil", 1500, 4);
+        PersonalBankAccount account4 = new PersonalBankAccount("4", "Kamal", 2500, 5.5);
+        PersonalBankAccount account5 = new PersonalBankAccount("5", "Ruwan", 3000, 6);
+        PersonalBankAccount account6 = new PersonalBankAccount("6", "Saman", 1800, 4.8);
+        PersonalBankAccount account7 = new PersonalBankAccount("7", "Bandara", 2200, 5.2);
+        PersonalBankAccount account8 = new PersonalBankAccount("8", "Chandana", 2700, 5.7);
+        PersonalBankAccount account9 = new PersonalBankAccount("9", "Gayan", 3200, 6.1);
+        PersonalBankAccount account10 = new PersonalBankAccount("10", "Lahiru", 3500, 6.3);
 
 
 
@@ -120,21 +120,21 @@ public class BeforeOOP {
     }
 }
 
-class BankAccount {
+class PersonalBankAccount {
     private String accountNumber;
     private String holderName;
     private double balance;
     private double interestRate;
 
     // to initiate the object
-    public BankAccount(String accountNumber, String holderName, double balance, double interestRate) {
+    public PersonalBankAccount(String accountNumber, String holderName, double balance, double interestRate) {
         this.accountNumber = accountNumber;
         this.holderName = holderName;
         this.balance = balance;
         this.interestRate = interestRate;
     }
 
-    public BankAccount() {
+    public PersonalBankAccount() {
 
     }
 

@@ -4,7 +4,6 @@ import com.bank.payment.Payment;
 
 import java.util.Date;
 
-
 public class GeneralSavingAccount extends SavingAccount implements Payment {
     public GeneralSavingAccount(String accNo, String holderName, double balance, double interestRate) {
         super(accNo, holderName, balance, interestRate);

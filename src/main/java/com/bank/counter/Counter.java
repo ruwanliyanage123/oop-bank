@@ -14,6 +14,7 @@ public class Counter {
         final List<BankAccount> bankAccounts = createBankAccounts();
         final List<BankAccount> taxableAccounts = findTaxableAccounts(bankAccounts, MINIMUM_TAXABLE_AMOUNT);
         printAccountDetails(taxableAccounts);
+
     }
 
     public static List<BankAccount> createBankAccounts() {
@@ -58,6 +59,20 @@ public class Counter {
             }
         }
         return taxableAccounts;
+    }
+
+    public static List<BankAccount> findNonSeniorTaxableAccounts(List<BankAccount> accounts, double minimumTaxableAmount) {
+        final List<BankAccount> taxableAccounts = new ArrayList<>();
+        for (BankAccount account : accounts) {
+            if (account.getBalance() >= minimumTaxableAmount && !isSeniorCitizen(account)) {
+                taxableAccounts.add(account);
+            }
+        }
+        return taxableAccounts;
+    }
+
+    public static boolean isSeniorCitizen(BankAccount account) {
+        return account instanceof SeniorCitizenAccount;
     }
 
     public static void printAccountDetails(List<BankAccount> accounts) {
