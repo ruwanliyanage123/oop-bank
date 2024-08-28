@@ -12,5 +12,7 @@ SELECT e.name, d.name FROM employee e JOIN department d ON e.id = d.id;
 //write a query for join three tables
 SELECT e.name, d.name, p.name FROM employee e JOIN department d ON e.id = d.id JOIN project p ON e.id = p.id;
 
+SELECT e.name, d.name, p.name FROM employee e JOIN department d ON e.id = d.id JOIN project p ON e.id = p.id; 
+
 
 
