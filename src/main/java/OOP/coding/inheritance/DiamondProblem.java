@@ -1,4 +1,4 @@
-package org.example.code.inheritance;
+package OOP.coding.inheritance;
 
 public class DiamondProblem {
 }

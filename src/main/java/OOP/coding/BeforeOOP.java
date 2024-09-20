@@ -1,4 +1,4 @@
-package org.example.code;
+package OOP.coding;
 
 public class BeforeOOP {
     public static void main(String[] args) {

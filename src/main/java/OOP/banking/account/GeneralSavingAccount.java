@@ -1,6 +1,6 @@
-package com.bank.account;
+package OOP.banking.account;
 
-import com.bank.payment.Payment;
+import OOP.banking.payment.Payment;
 
 import java.util.Date;
 

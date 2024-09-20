@@ -1,4 +1,4 @@
-package org.example.code.abstraction;
+package OOP.coding.abstraction;
 
 // Define an abstract class that implements the Loan interface
 public abstract class AbstractLoan implements Loan {

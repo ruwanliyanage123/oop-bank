@@ -1,4 +1,4 @@
-package com.bank.account;
+package OOP.banking.account;
 
 public class ChildSavingAccount extends SavingAccount{
     private int age;

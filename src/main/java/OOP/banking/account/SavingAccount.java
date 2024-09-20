@@ -1,4 +1,4 @@
-package com.bank.account;
+package OOP.banking.account;
 
 public class SavingAccount extends BankAccount {
     private double interestRate;

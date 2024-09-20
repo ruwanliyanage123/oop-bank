@@ -1,4 +1,4 @@
-package org.example.code.abstraction;
+package OOP.coding.abstraction;
 
 // Define an interface for loans
 public interface Loan {

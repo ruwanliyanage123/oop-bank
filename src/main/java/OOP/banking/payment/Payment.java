@@ -1,4 +1,4 @@
-package com.bank.payment;
+package OOP.banking.payment;
 
 import java.util.Date;
 

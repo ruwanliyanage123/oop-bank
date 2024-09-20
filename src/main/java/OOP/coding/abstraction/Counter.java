@@ -1,4 +1,4 @@
-package org.example.code.abstraction;
+package OOP.coding.abstraction;
 
 public class Counter {
     public static void main(String[] args) {

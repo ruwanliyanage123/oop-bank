@@ -1,9 +1,9 @@
-package com.bank.counter;
+package OOP.banking.counter;
 
-import com.bank.account.BankAccount;
-import com.bank.account.FixedDepositAccount;
-import com.bank.account.SavingAccount;
-import com.bank.account.SeniorCitizenAccount;
+import OOP.banking.account.BankAccount;
+import OOP.banking.account.SavingAccount;
+import OOP.banking.account.FixedDepositAccount;
+import OOP.banking.account.SeniorCitizenAccount;
 
 import java.util.ArrayList;
 import java.util.List;

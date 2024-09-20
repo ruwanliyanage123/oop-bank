@@ -1,4 +1,4 @@
-package com.bank.account;
+package OOP.banking.account;
 
 public abstract class BankAccount {
     private String accNo;//private access modifier
