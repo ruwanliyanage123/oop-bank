@@ -1,6 +1,9 @@
 package designpatterns.factory.payment;
 
 public class PaymentFactory {
+    private PaymentFactory() {
+    }
+
     public static PaymentMethod createPaymentMethod(String methodType) {
         switch (methodType) {
             case "CreditCard":
