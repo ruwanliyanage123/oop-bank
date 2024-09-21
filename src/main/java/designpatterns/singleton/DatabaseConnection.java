@@ -1,13 +1,8 @@
 package designpatterns.singleton;
 
 public class DatabaseConnection {
-    private static final DatabaseConnection instance = new DatabaseConnection();
-    private DatabaseConnection() {
+    public DatabaseConnection() {
         System.out.println("Database connection created...");
-    }
-
-    public static DatabaseConnection getInstance() {
-        return instance;
     }
 
     public void executeQuery(String query) {
