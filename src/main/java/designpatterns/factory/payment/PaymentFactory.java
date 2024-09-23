@@ -10,7 +10,7 @@ public class PaymentFactory {
                 return new CreditCard();
             case "PayPal":
                 return new PayPal();
-            case "Bitcoin":
+            case "Cash":
                 return new Cash();
             default:
                 throw new IllegalArgumentException("Unknown payment method: " + methodType);

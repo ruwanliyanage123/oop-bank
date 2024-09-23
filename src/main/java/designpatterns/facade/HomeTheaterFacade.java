@@ -1,17 +1,18 @@
 package designpatterns.facade;
 
-// HomeTheaterFacade class
+import jakarta.inject.Inject;
+
 class HomeTheaterFacade {
+    @Inject
     private Amplifier amplifier;
+    @Inject
     private Projector projector;
+    @Inject
     private Screen screen;
+    @Inject
     private DVDPlayer dvdPlayer;
 
-    public HomeTheaterFacade(Amplifier amplifier, Projector projector, Screen screen, DVDPlayer dvdPlayer) {
-        this.amplifier = amplifier;
-        this.projector = projector;
-        this.screen = screen;
-        this.dvdPlayer = dvdPlayer;
+    public HomeTheaterFacade() {
     }
 
     public void watchMovie(String movie) {
