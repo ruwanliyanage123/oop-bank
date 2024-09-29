@@ -1,5 +1,9 @@
 package general;
 
+/**
+* Example for static 
+**/    
+
 public class StaticExample {
     public int instanceVariable = 10;
     public static int staticVariable = 20;
